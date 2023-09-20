@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>UpDate-user 👨🏻‍💻</title>
+  </head>
+  <body>
+    <div class="container">
+            <!-- form para los usuarios -->
+            <form style="margin-left: 20px;">
+                <p>
+                    <label for="firstname">Firstname</label>
+                    <br>
+                    <input style="width: 100%!important;" type="text" id="firstname">
+                    <input style="width: 100%!important;" type="hidden" id="id">
+                </p>
+                <p>
+                    <label for="lastname">Lastname</label>
+                    <br>
+                    <input style="width: 100%!important;" type="text" id="lastname">
+                </p>
+                <p>
+                    <label for="address">Address</label>
+                    <br>
+                    <input style="width: 100%!important;" type="email" id="address">
+                </p>
+                <p>
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input style="width: 100%!important;" type="number" id="phone">
+                </p>
+                <button type="button" class="btn btn-outline-success" style="width: 100%!important;"  data-bs-toggle="modal" data-bs-target="#modalUpdate">Update</button>
+                <!-- Modal -->
+                <div class="modal fade" id="modalUpdate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header bg-success">
+                        <h5 class="display-6 fw-bolder modal-title" style="color: #ffffff;" id="exampleModalLabel">Update</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="fw-bold fs-5 modal-body text-muted text-center">
+                        <p>Are you sure you want to update this user?</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" id="btnUpdate">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </form>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/update.js"></script>
+  </body>
+</html>
